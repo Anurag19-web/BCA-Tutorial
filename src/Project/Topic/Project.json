@@ -1,0 +1,174 @@
+[
+    {   "id":1,
+        "name":"HTML",
+        "URL":"https://www.youtube.com/embed/HcOc7P5BMi4?feature=shared"
+    },
+    {
+        "id":2,
+        "name":"CSS",
+        "URL":"https://www.youtube.com/embed/ESnrn1kAD4E?feature=shared"
+    },
+    {
+        "id":3.1,
+        "name":"LOGIC GATES",
+        "URL":"https://www.youtube.com/embed/3oNzkS1WYas?feature=shared"
+    },
+    {
+        "id":3.2,
+        "name":"BOOLEAN ALGEBRA",
+        "URL":"https://www.youtube.com/embed/yhLbgwT7pcg?feature=shared"
+    },
+    {
+        "id":3.3,
+        "name":"NUMBER SYSTEM",
+        "URL":"https://www.youtube.com/embed/playlist?list=PYBrBXYLenvkAc3PVt0WZm6h&feature=shared"
+    },
+    {
+        "id":3.4,
+        "name":"HALF AND FULL ADDER",
+        "URL":"https://www.youtube.com/embed/SYTDxdACf2E?feature=shared"
+    },
+    {
+        "id":4,
+        "name":"JAVASCRIPT",
+        "URL":"JAVASCRIPT VIDEO"
+    },
+    {
+        "javascript":[
+            {
+                "id":4.1,
+                "name":"Variables & Data Types",
+                "URL":"https://www.youtube.com/embed/ajdRvxDWH4w?feature=shared"
+            },
+            {
+                "id":4.2,
+                "name":"Operators & Conditional Statements",
+                "URL":"https://www.youtube.com/embed/Zg4-uSjxosE?feature=shared"
+            },
+            {
+                "id":4.3,
+                "name":"Loops & Strings",
+                "URL":"https://www.youtube.com/embed/UmRtFFSDSFo?feature=shared"
+            },
+            {
+                "id":4.4,
+                "name":"Arrays",
+                "URL":"https://www.youtube.com/embed/gFWhbjzowrM?feature=shared"
+            },
+            {
+                "id":4.5,
+                "name":"Functions & Methods",
+                "URL":"https://www.youtube.com/embed/P0XMXqDGttU?feature=shared"
+            },
+            {
+                "id":4.6,
+                "name":"DOM",
+                "URL":"https://www.youtube.com/embed/7zcXPCt8Ck0?feature=shared"
+            },
+            {
+                "id":4.7,
+                "name":"Document Object Model(Part 2)",
+                "URL":"https://www.youtube.com/embed/fXAGTOZ25H8?feature=shared"
+            },
+            {
+                "id":4.8,
+                "name":"Events",
+                "URL":"https://www.youtube.com/embed/_i-uLJAh79U?feature=shared"
+            },
+            {
+                "id":4.9,
+                "name":"Classes & Objects",
+                "URL":"https://www.youtube.com/embed/N-O4w6PynGY?feature=shared"
+            },
+            {
+                "id":4.10,
+                "name":"Callbacks, Promises & Async Await",
+                "URL":"https://www.youtube.com/embed/d3jXofmQm44?feature=shared"
+            },
+            {
+                "id":4.11,
+                "name":"API Calls",
+                "URL":"https://www.youtube.com/embed/CyGodpqcid4?feature=shared"
+            }
+            ]
+        },
+    {
+        "id":5,
+        "name":"C LANGUAGE",
+        "URL":"https://www.youtube.com/embed/irqbmMNs2Bo?feature=shared"
+    },
+    {
+        "id":6,
+        "name":"DBMS",
+        "URL":"https://www.youtube.com/embed/hlgoqc332vm?feature=shared"
+    },
+    {
+        "id":7,
+        "name":"CPP",
+        "URL":"https://www.youtube.com/embed/mlIUKyZIUUU?feature=shared"
+    },
+    {
+        "id":8,
+        "name":"ADBMS",
+        "URL":"ADBMS VIDEO"
+    },
+    {
+        "id":9,
+        "name":"JAVA",
+        "URL":"https://www.youtube.com/embed/xTtL8E4LzTQ+?feature=shared"
+    },
+    {
+        "id":10,
+        "name":"PYTHON",
+        "URL":"PYTHON"
+    },
+    {
+        "python":[
+            {
+                "id":10.1,
+                "name":"Variables & Data Types",
+                "URL":"https://www.youtube.com/embed/t2_Q2BRzeEE?feature=shared"
+            },
+            {
+                "id":10.2,
+                "name":"Strings & Conditionals",
+                "URL":"https://www.youtube.com/embed/llld8lDP6TU?feature=shared"
+            },
+            {
+                "id":10.3,
+                "name":"Lists & Tuples",
+                "URL":"https://www.youtube.com/embed/qVyvmzFxF_o?feature=shared"
+            },
+            {
+                "id":10.4,
+                "name":"Dictionary & Sets",
+                "URL":"https://www.youtube.com/embed/078tYSD7K8E?feature=shared"
+            },
+            {
+                "id":10.5,
+                "name":"Loops",
+                "URL":"https://www.youtube.com/embed/S73thlOAyFU?feature=shared"
+            },
+            {
+                "id":10.6,
+                "name":"Functions & Recursion",
+                "URL":"https://www.youtube.com/embed/OvTH-7ESoRA?feature=shared"
+            },
+            {
+                "id":10.7,
+                "name":"File I/O",
+                "URL":"https://www.youtube.com/embed/jU0cndZziO0?feature=shared"
+            },
+            {
+                "id":10.8,
+                "name":"OOPS",
+                "URL":"https://www.youtube.com/embed/HeW-D6KpDwY?feature=shared"
+            },
+            {
+                "id":10.9,
+                "name":"OOPS",
+                "URL":"https://www.youtube.com/embed/bAwmZVJeO5s?feature=shared"
+            }
+            ]
+        }
+]
