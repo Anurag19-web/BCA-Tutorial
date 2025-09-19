@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Project from "./Topic/Project.json";
 
-export const Videos = () => {
+export const Videos = ({theme}) => {
   const location = useLocation();
   const navigate = useNavigate();
   const { page } = location.state;
@@ -75,7 +75,7 @@ export const Videos = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 px-6 py-20">
+    <div className={`min-h-screen ${theme === "dark" ? "bg-black text-white" : "bg-white text-black"} px-6 py-20`}>
       {/* Back Button */}
       <motion.button
         onClick={() => navigate(-1)}

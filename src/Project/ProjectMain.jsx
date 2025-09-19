@@ -68,88 +68,80 @@ export const ProjectMain = () =>{
         },
         {
           path:"/categories",
-          element:<Categories/>
+          element:<Categories theme={theme} setTheme={setTheme}/>
         },
         {
           path:"/signup",
-          element:<Signup/>
+          element:<Signup theme={theme} setTheme={setTheme}/>
         },
         {
           path:"/login",
-          element:<Login/>
+          element:<Login theme={theme} setTheme={setTheme}/>
         },
         {
           path:"/Sem1/subject",
-          element:<SemOneSubject/>
+          element:<SemOneSubject theme={theme} setTheme={setTheme}/>
         },
         {
           path:"/Sem2/subject",
-          element:<SemTwoSubject/>
+          element:<SemTwoSubject theme={theme} setTheme={setTheme}/>
         },
         {
           path:"/Sem3/subject",
-          element:<SemThreeSubject/>
-        },
-        {
-          path:"/topic",
-          element:<Topic/>
+          element:<SemThreeSubject theme={theme} setTheme={setTheme}/>
         },
         {
           path:"/html/topic",
-          element:<HtmlTopic/>
+          element:<HtmlTopic theme={theme} setTheme={setTheme}/>
         },
         {
           path:"/css/topic",
-          element:<CssTopic/>
+          element:<CssTopic theme={theme} setTheme={setTheme}/>
         },
         {
           path:"/code/topic",
-          element:<CodeTopic/>
+          element:<CodeTopic theme={theme} setTheme={setTheme}/>
         },
         {
           path:"/javascript/topic",
-          element:<JavascriptTopic/>
+          element:<JavascriptTopic theme={theme} setTheme={setTheme}/>
         },
         {
           path:"/c/topic",
-          element:<CTopic/>
+          element:<CTopic theme={theme} setTheme={setTheme}/>
         },
         {
           path:"/dbms/topic",
-          element:<DbmsTopic/>
+          element:<DbmsTopic theme={theme} setTheme={setTheme}/>
         },
         {
           path:"/cpp/topic",
-          element:<CppTopic/>
+          element:<CppTopic theme={theme} setTheme={setTheme}/>
         },
         {
           path:"/java/topic",
-          element:<JavaTopic/>
+          element:<JavaTopic theme={theme} setTheme={setTheme}/>
         },
         {
           path:"/python/topic",
-          element:<PythonTopic/>
+          element:<PythonTopic theme={theme} setTheme={setTheme}/>
         },
         {
           path:"/videos",
-          element:<Videos/>
+          element:<Videos theme={theme} setTheme={setTheme}/>
         },
         {
           path:"/about",
-          element:<AboutUs/>
+          element:<AboutUs theme={theme} setTheme={setTheme}/>
         },
         {
           path:"/help",
-          element:<Help/>
+          element:<Help theme={theme} setTheme={setTheme}/>
         },
         {
           path:"/contact",
-          element:<Contact/>
+          element:<Contact theme={theme} setTheme={setTheme}/>
         },
-        // {
-        //   path: "/post",
-        //   element: <Posts/>
-        // } 
       ]
     }
   ])

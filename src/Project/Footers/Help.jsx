@@ -1,9 +1,9 @@
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 
-export const Help = () => {
+export const Help = ({theme}) => {
   return (
-    <div className="min-h-screen bg-gray-50 py-20 px-6 md:px-16 lg:px-32 relative">
+    <div className={`min-h-screen ${theme === "dark" ? "bg-black text-white" : "bg-white text-black"} py-20 px-6 md:px-16 lg:px-32 relative`}>
       {/* Heading */}
       <motion.div
         className="text-center mb-12"
@@ -12,14 +12,14 @@ export const Help = () => {
         transition={{ duration: 0.8 }}
       >
         <h1 className="text-4xl md:text-5xl font-bold text-blue-600 mb-4">Help</h1>
-        <h3 className="text-xl md:text-2xl font-semibold text-gray-700">
+        <h3 className="text-xl md:text-2xl font-semibold">
           Need Assistance or Have a Suggestion?
         </h3>
       </motion.div>
 
       {/* Description */}
       <motion.p
-        className="text-gray-700 text-lg md:text-xl mb-6 text-center md:text-left"
+        className="text-lg md:text-xl mb-6 text-center md:text-left"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.3, duration: 0.8 }}
@@ -35,7 +35,7 @@ export const Help = () => {
         transition={{ delay: 0.5, duration: 0.8 }}
       >
         <h2 className="text-2xl md:text-3xl font-bold text-blue-500 mb-4">Common Issues:</h2>
-        <ul className="list-disc list-inside space-y-2 text-gray-700 text-lg md:text-xl">
+        <ul className="list-disc list-inside space-y-2 text-lg md:text-xl">
           <li>Videos not loading properly?</li>
           <li>Facing difficulties with navigation?</li>
           <li>Problems with accessing content on mobile devices?</li>
@@ -44,7 +44,7 @@ export const Help = () => {
 
       {/* Contact & Suggestions */}
       <motion.div
-        className="mb-6 text-gray-700 text-lg md:text-xl"
+        className="mb-6 text-lg md:text-xl"
         initial={{ opacity: 0, x: 50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ delay: 0.7, duration: 0.8 }}

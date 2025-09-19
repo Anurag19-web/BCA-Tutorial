@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 
-export const AboutUs = () => {
+export const AboutUs = ({theme}) => {
   return (
-    <div className="min-h-screen bg-gray-50 py-20 px-6 md:px-16 lg:px-32">
+    <div className={`min-h-screen ${theme === "dark" ? "bg-black text-white" : "bg-white text-black"} py-20 px-6 md:px-16 lg:px-32`}>
       {/* About Section */}
       <motion.div
         className="mb-12 text-center"
@@ -11,10 +11,10 @@ export const AboutUs = () => {
         transition={{ duration: 0.8 }}
       >
         <h1 className="text-4xl md:text-5xl font-bold text-blue-600 mb-6">About Us</h1>
-        <p className="text-gray-700 text-lg md:text-xl mb-4">
+        <p className="text-lg md:text-xl mb-4">
           Welcome to <span className="font-semibold text-blue-600">FutureWise</span>, where we aim to make learning accessible and engaging for students around the globe. Our platform provides high-quality educational videos, interactive content, and support students need to excel in their exams.
         </p>
-        <p className="text-gray-600 text-base md:text-lg">
+        <p className="text-base md:text-lg">
           Whether you're studying for school exams, college entrance, or any other academic goal, our courses are tailored to help you succeed. We are committed to making education accessible, flexible, and effective for all students, no matter where they are.
         </p>
       </motion.div>
@@ -27,7 +27,7 @@ export const AboutUs = () => {
         transition={{ duration: 0.8 }}
       >
         <h1 className="text-3xl md:text-4xl font-bold text-blue-500 mb-4 text-center md:text-left">Our Mission</h1>
-        <p className="text-gray-700 text-lg md:text-xl text-center md:text-left">
+        <p className="text-lg md:text-xl text-center md:text-left">
           Our mission is to empower students with the knowledge and tools to succeed academically and beyond. We believe that education should be simple, accessible, and effective.
         </p>
       </motion.div>
@@ -40,7 +40,7 @@ export const AboutUs = () => {
         transition={{ duration: 0.8 }}
       >
         <h1 className="text-3xl md:text-4xl font-bold text-blue-500 mb-4 text-center md:text-left">Our Team</h1>
-        <p className="text-gray-700 text-lg md:text-xl text-center md:text-left">
+        <p className="text-lg md:text-xl text-center md:text-left">
           Our team consists of experienced educators and developers passionate about creating the best educational experience for our users. Together, we strive to continually improve the platform and add new content based on student needs.
         </p>
       </motion.div>

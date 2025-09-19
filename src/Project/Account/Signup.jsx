@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 
-export const Signup = () => {
+export const Signup = ({theme}) => {
   const [form, setForm] = useState({
     username: "",
     email: "",
@@ -28,16 +28,16 @@ export const Signup = () => {
   }, []);
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 px-4">
+    <div className={`min-h-screen flex items-center justify-center ${theme === "dark" ? "bg-black text-white" : "bg-white text-black"} px-4`}>
       <motion.div
-        className="bg-white rounded-3xl shadow-2xl max-w-md w-full p-8"
+        className="bg-gray-800 rounded-3xl shadow-2xl max-w-md w-full p-8"
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
         {/* Heading */}
         <motion.h1
-          className="text-4xl font-bold text-gray-800 text-center mb-6"
+          className="text-4xl font-bold text-center mb-6"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6 }}

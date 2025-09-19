@@ -3,13 +3,13 @@ import { motion } from "framer-motion";
 
 export const Home = ({ theme }) => {
   const courses = [
-    { title: "BCA Introduction", desc: "Learn the fundamentals of BCA.", color: "bg-red-500" },
-    { title: "Coding Basics", desc: "Understand the basics of coding.", color: "bg-green-500" },
-    { title: "Unlock Your Tech Potential", desc: "Master programming skills with engaging tutorials and practical insights.", color: "bg-blue-500" },
+    { title: "BCA Introduction", desc: "Learn the fundamentals of BCA.", color: "bg-indigo-800" },
+    { title: "Coding Basics", desc: "Understand the basics of coding.", color: "bg-indigo-800" },
+    { title: "Unlock Your Tech Potential", desc: "Master programming skills with engaging tutorials and practical insights.", color: "bg-indigo-800" },
   ];
 
   return (
-    <div className={`min-h-screen ${theme === "dark" ? "bg-gray-900 text-white" : "bg-gray-100 text-gray-900"} pt-24 px-6 flex flex-col items-center space-y-16`}>
+    <div className={`min-h-screen ${theme === "dark" ? "bg-black text-white" : "bg-white text-black"} pt-24 px-6 flex flex-col items-center space-y-16`}>
       
       {/* Hero Section */}
       <motion.div
@@ -18,7 +18,7 @@ export const Home = ({ theme }) => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <h1 className="text-4xl md:text-5xl font-extrabold text-blue-600 dark:text-blue-400">
+        <h1 className="text-4xl md:text-5xl font-extrabold text-blue-600">
           Empowering Students to Succeed
         </h1>
         <h3 className="text-xl md:text-2xl text-gray-700 dark:text-gray-300">

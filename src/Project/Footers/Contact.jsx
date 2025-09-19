@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 
-export const Contact = () => {
+export const Contact = ({theme}) => {
   const [emailLink, setEmailLink] = useState("");
 
   useEffect(() => {
@@ -15,10 +15,10 @@ export const Contact = () => {
   }, []);
 
   return (
-    <section className="relative bg-gray-100 pt-24 pb-32">
+  <section className={`relative ${theme === "dark" ? "bg-black text-white" : "bg-white text-black"} pt-24 pb-32`}>
       <div className="container mx-auto px-6 text-center">
         <motion.h3
-          className="text-4xl font-bold mb-6 text-gray-800"
+          className="text-4xl font-bold mb-6 text-indigo-500"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -27,7 +27,7 @@ export const Contact = () => {
         </motion.h3>
 
         <motion.p
-          className="text-gray-600 mb-12 text-lg md:text-xl max-w-2xl mx-auto"
+          className="mb-12 text-lg md:text-xl max-w-2xl mx-auto"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
@@ -36,42 +36,42 @@ export const Contact = () => {
         </motion.p>
 
         <motion.div
-          className="bg-white shadow-lg rounded-2xl p-8 max-w-lg mx-auto mb-12 text-left space-y-4"
+          className="bg-gray-800 shadow-lg rounded-2xl p-8 max-w-lg mx-auto mb-12 text-left space-y-4"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <p className="text-lg text-black"><strong>📞 Phone:</strong> +91 85114 10560</p>
-          <p className="text-lg text-black">
+          <p className="text-lg"><strong>📞 Phone:</strong> +91 85114 10560</p>
+          <p className="text-lg">
             <strong>📧 Email:</strong>{" "}
             <a
               href={emailLink}
               target={emailLink.startsWith("http") ? "_blank" : undefined}
               rel={emailLink.startsWith("http") ? "noreferrer" : undefined}
-              className="text-blue-600 hover:underline break-words"
+              className="text-blue-500 hover:underline break-words"
             >
               anuragnayak78910@gmail.com
             </a>
           </p>
-          <p className="text-lg text-black"><strong>📍 Location:</strong> Ahmedabad, Gujarat, India</p>
-          <p className="text-lg text-black">
+          <p className="text-lg"><strong>📍 Location:</strong> Ahmedabad, Gujarat, India</p>
+          <p className="text-lg">
             <strong>💻 GitHub:</strong>{" "}
             <a
               href="https://github.com/Anurag19-web"
               target="_blank"
               rel="noreferrer"
-              className="text-blue-600 hover:underline break-words"
+              className="text-blue-500 hover:underline break-words"
             >
               github.com/Anurag19-web
             </a>
           </p>
-          <p className="text-lg text-black">
+          <p className="text-lg">
             <strong>🔗 LinkedIn:</strong>{" "}
             <a
               href="https://www.linkedin.com/in/anurag-nayak-4a7b72358/"
               target="_blank"
               rel="noreferrer"
-              className="text-blue-600 hover:underline break-words"
+              className="text-blue-500 hover:underline break-words"
             >
               linkedin.com/in/anurag-nayak
             </a>
@@ -89,7 +89,7 @@ export const Contact = () => {
             href={emailLink}
             target={emailLink.startsWith("http") ? "_blank" : undefined}
             rel={emailLink.startsWith("http") ? "noreferrer" : undefined}
-            className="hover:text-blue-600 transition-colors duration-300 text-black"
+            className="hover:text-blue-600 transition-colors duration-300"
           >
             <FaEnvelope />
           </a>
@@ -97,7 +97,7 @@ export const Contact = () => {
             href="https://github.com/Anurag19-web"
             target="_blank"
             rel="noreferrer"
-            className="hover:text-blue-600 transition-colors duration-300 text-black"
+            className="hover:text-blue-600 transition-colors duration-300"
           >
             <FaGithub />
           </a>
@@ -105,7 +105,7 @@ export const Contact = () => {
             href="https://www.linkedin.com/in/anurag-nayak-4a7b72358/"
             target="_blank"
             rel="noreferrer"
-            className="hover:text-blue-600 transition-colors duration-300 text-black"
+            className="hover:text-blue-600 transition-colors duration-300"
           >
             <FaLinkedin />
           </a>

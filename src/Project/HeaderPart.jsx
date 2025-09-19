@@ -15,11 +15,11 @@ export const Header = ({ theme }) => {
   const MotionNavLink = motion(NavLink);
 
   return (
-    <header className={`fixed w-full z-50 shadow-md ${theme === "dark" ? "bg-gray-900 text-white" : "bg-white text-gray-900"}`}>
+    <header className={`fixed w-full z-50 shadow-md bg-indigo-900 text-white`}>
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo */}
         <motion.h1
-          className="text-2xl md:text-3xl font-bold text-blue-600 dark:text-blue-400"
+          className="text-2xl md:text-3xl font-bold"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -34,8 +34,8 @@ export const Header = ({ theme }) => {
               key={idx}
               to={link.to}
               className={({ isActive }) =>
-                `font-semibold hover:text-blue-600 dark:hover:text-blue-400 transition-colors ${
-                  isActive ? "text-blue-600 dark:text-blue-400" : ""
+                `font-semibold hover:text-blue-600 text-white transition-colors ${
+                  isActive ? "text-white" : ""
                 }`
               }
               whileHover={{ scale: 1.1 }}

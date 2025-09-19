@@ -1,20 +1,20 @@
 import { NavLink, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 
-export const SemTwoSubject = () => {
+export const SemTwoSubject = ({theme}) => {
       const navigate = useNavigate()
   const subjects = [
-    { title: "Basic JS", desc: "Explore videos on JavaScript.", link: "/javascript/topic", color: "from-yellow-400 to-yellow-600" },
-    { title: "Basic C", desc: "Explore videos on C Language.", link: "/c/topic", color: "from-green-400 to-green-600" },
-    { title: "DBMS", desc: "Explore videos on DBMS.", link: "/dbms/topic", color: "from-purple-400 to-purple-600" },
+    { title: "Basic JS", desc: "Explore videos on JavaScript.", link: "/javascript/topic", color: "bg-indigo-800" },
+    { title: "Basic C", desc: "Explore videos on C Language.", link: "/c/topic", color: "bg-indigo-800" },
+    { title: "DBMS", desc: "Explore videos on DBMS.", link: "/dbms/topic", color: "bg-indigo-800" },
   ];
 
   return (
-    <div className="min-h-screen py-20 px-6 bg-gray-50">
+    <div className={`min-h-screen py-20 px-6 ${theme === "dark" ? "bg-black text-white" : "bg-white text-black"}`}>
       {/* Back Button */}
       <motion.button
         onClick={() => navigate("/categories")}
-        className="mb-6 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-md"
+        className="mb-6 px-4 py-2 bg-indigo-800 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-md"
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
       >
@@ -27,10 +27,10 @@ export const SemTwoSubject = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+        <h1 className="text-4xl md:text-5xl font-bold mb-4">
           Select a Subject
         </h1>
-        <p className="text-gray-600 text-lg md:text-xl max-w-2xl mx-auto">
+        <p className="text-lg md:text-xl max-w-2xl mx-auto">
           Choose from a variety of subjects to focus on for your exams.
         </p>
       </motion.div>

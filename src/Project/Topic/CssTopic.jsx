@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 
-export const CssTopic = () => {
+export const CssTopic = ({theme}) => {
   const navigate = useNavigate();
 
   const handleClick = (page) => {
@@ -9,11 +9,11 @@ export const CssTopic = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 py-20 px-6">
+    <div className={`min-h-screen py-20 px-6 ${theme === "dark" ? "bg-black text-white" : "bg-white text-black"}`}>
       {/* Back Button */}
       <motion.button
         onClick={() => navigate(-1)}
-        className="mb-6 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-md"
+        className="mb-6 px-4 py-2 bg-indigo-800 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-md"
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
       >
@@ -26,10 +26,10 @@ export const CssTopic = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <h1 className="text-4xl md:text-5xl font-bold text-gray-800">
+        <h1 className="text-4xl md:text-5xl font-bold">
           CSS Videos
         </h1>
-        <p className="text-gray-600 text-lg md:text-xl mt-4">
+        <p className="text-lg md:text-xl mt-4">
           Click below to start learning CSS in one shot.
         </p>
       </motion.div>
@@ -37,7 +37,7 @@ export const CssTopic = () => {
       {/* Chapter Card */}
       <div className="max-w-3xl mx-auto">
         <motion.div
-          className="p-8 rounded-2xl shadow-2xl bg-gradient-to-r from-blue-400 to-blue-600 text-white mb-8 hover:scale-105 hover:shadow-3xl transition-transform duration-300"
+          className="p-8 rounded-2xl shadow-2xl bg-gradient-to-r bg-indigo-800 text-white mb-8 hover:scale-105 hover:shadow-3xl transition-transform duration-300"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}

@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 
-export const CodeTopic = () => {
+export const CodeTopic = ({theme}) => {
   const navigate = useNavigate();
 
   const handleClick = (page) => {
@@ -9,18 +9,18 @@ export const CodeTopic = () => {
   };
 
   const topics = [
-    { title: "Logic Gates", desc: "Learn the Logic Gates.", page: 3.1, color: "from-red-400 to-red-600" },
-    { title: "Boolean Algebra", desc: "Learn the Boolean Algebra.", page: 3.2, color: "from-green-400 to-green-600" },
-    { title: "Number System", desc: "Learn the Number System.", page: 3.3, color: "from-blue-400 to-blue-600" },
-    { title: "Half & Full Adder", desc: "Learn the Half and Full Adder.", page: 3.4, color: "from-purple-400 to-purple-600" },
+    { title: "Logic Gates", desc: "Learn the Logic Gates.", page: 3.1, color: "bg-indigo-800" },
+    { title: "Boolean Algebra", desc: "Learn the Boolean Algebra.", page: 3.2, color: "bg-indigo-800" },
+    { title: "Number System", desc: "Learn the Number System.", page: 3.3, color: "bg-indigo-800" },
+    { title: "Half & Full Adder", desc: "Learn the Half and Full Adder.", page: 3.4, color: "bg-indigo-800" },
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50 py-20 px-6">
+    <div className={`min-h-screen  py-20 px-6 ${theme === "dark" ? "bg-black text-white" : "bg-white text-black"}`}>
       {/* Back Button */}
       <motion.button
         onClick={() => navigate(-1)}
-        className="mb-6 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-md"
+        className="mb-6 px-4 py-2 bg-indigo-800 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-md"
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
       >
@@ -33,8 +33,8 @@ export const CodeTopic = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <h1 className="text-4xl md:text-5xl font-bold text-gray-800">Select Your Topic</h1>
-        <p className="text-gray-600 text-lg md:text-xl mt-4">Choose a topic to start learning the coding concepts.</p>
+        <h1 className="text-4xl md:text-5xl font-bold">Select Your Topic</h1>
+        <p className="text-lg md:text-xl mt-4">Choose a topic to start learning the coding concepts.</p>
       </motion.div>
 
       {/* Topics Cards */}
@@ -53,7 +53,7 @@ export const CodeTopic = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => handleClick(topic.page)}
-              className="inline-block px-6 py-3 font-semibold rounded-lg bg-white text-gray-800 hover:bg-gray-200 transition-all duration-300"
+              className="inline-block px-6 py-3 font-semibold rounded-lg bg-white text-blue-600 hover:bg-gray-200 transition-all duration-300"
             >
               Start Learning
             </motion.button>
